@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <p>lol</p>
       {/* <div>
       {arr.map((element, index) => {
         if (element % 6 === 0) {
