@@ -1,11 +1,15 @@
 import React from "react";
 import "./styles/App.css";
+import { useNavigate } from "react-router-dom";
 
 const PostFilter = ({ filter, setFilter }) => {
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const query = e.target.search.value;
     setFilter({ post: query });
+    navigate('/search');
   };
 
   return (

@@ -7,7 +7,7 @@ import Posts from "./pages/Posts"
 const AppRoutes = () => {
     return (
         <Routes>
-            <Route path={'/posts'} element={<Posts/>} exact/>
+            <Route path={''} element={<Posts/>} exact/>
             <Route path={'/search'} element={<Search/>} exact/>
         </Routes>
     );

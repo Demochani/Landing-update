@@ -1,5 +1,5 @@
 import React from "react";
-import Posts from './components/pages/Posts'
+import AppRoutes from "./components/AppRoutes";
 import NavBar from "./components/NavBar";
 import "./components/styles/App.css";
 
@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <p>lol</p>
       {/* <div>
       {arr.map((element, index) => {
         if (element % 6 === 0) {
@@ -21,7 +20,7 @@ function App() {
         return <h2 key={index}>{element}</h2>;
       })}
     </div> */}
-      <Posts/>
+      <AppRoutes/>
     </div>
   );
 }

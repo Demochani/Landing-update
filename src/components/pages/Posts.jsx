@@ -66,7 +66,13 @@ function App() {
         <PostFilter filter={filter} setFilter={setFilter} />
       </div>
       <PostInteresting posts={posts} postQuery={postQuery} />
-      <div ref={lastElement} style={{ height: 20, background: "none" }}></div>
+      {/* {posts.length<5 ? 
+      (
+        <div ref={lastElement} style={{ height: 20, display: 'none' ,background: "none" }}></div>
+      ) : (
+        <div ref={lastElement} style={{ height: 20, display: 'block',  background: "none" }}></div>
+      )} */}
+      <div ref={lastElement} style={{ height: 20, display: 'block',  background: "none" }}></div>
       {isPostLoading && (
         <div style={{ display: "flex", justifyContent: "center" }}>
           <Loader />
