@@ -5,9 +5,11 @@ import Posts from "./pages/Posts"
 
 
 const AppRoutes = () => {
+
+    
     return (
         <Routes>
-            <Route path={''} element={<Posts/>} exact/>
+            <Route path={'/'} element={<Posts />} exact/>
             <Route path={'/search'} element={<Search/>} exact/>
         </Routes>
     );

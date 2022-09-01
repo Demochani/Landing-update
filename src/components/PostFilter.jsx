@@ -6,15 +6,15 @@ const PostFilter = ({ filter, setFilter }) => {
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
-    e.preventDefault();
     const query = e.target.search.value;
+    e.preventDefault();
     setFilter({ post: query });
-    navigate('/search');
+    navigate("/search");
   };
 
   return (
     <form className="filter-form" autoComplete="off" onSubmit={handleSubmit}>
-      <input type="search" name="search" placeholder="Search..."/>
+      <input type="search" name="search" placeholder="Search..." />
     </form>
   );
 };
