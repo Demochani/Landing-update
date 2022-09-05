@@ -5,7 +5,7 @@ import "./styles/App.css";
 const PostInteresting = ({ posts }) => {
   if (!posts.length) {
     return (
-      <p style={{ margin: "20px", fontSize: "30px" }}>
+      <p className="no-posts">
         there are no posts with this name..... sad.......
       </p>
     );
@@ -13,8 +13,8 @@ const PostInteresting = ({ posts }) => {
 
   return (
     <div className="interesting-posts-container">
-      <hr style={{ margin: "20px 0 15px 0", color: "#C0C0C0" }} />
-      <strong style={{ margin: "10px 0 0 4%", color: "#C0C0C0" }}>
+      <hr  />
+      <strong >
         INTERESTING
       </strong>
       <div className="interesting-posts">

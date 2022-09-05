@@ -51,6 +51,7 @@ body {
   padding: 10px;
   background: white;
   box-shadow: 0 2px 0 #363636;
+  padding-left: 10%;
 }
 .navbar-container div {
   width: 10%;
@@ -112,6 +113,22 @@ body {
   margin: 0 auto;
 }
 
+.interesting-posts-container hr {
+  margin :20px 0 15px 0;
+  color:#C0C0C0;
+
+}
+
+.interesting-posts-container strong {
+  margin:10px 0 0 4%;
+  color: #C0C0C0;
+}
+
+.no-posts{
+  margin: 20px;
+  font-size: 30px;
+}
+
 /* .interesting-posts {
   display: flex;
   padding: 15px;
@@ -120,6 +137,11 @@ body {
   justify-content: space-between;
   align-items: center;
 } */
+
+.data {
+  color: #C0C0C0;
+  margin-bottom: 10px;
+}
 
 .interesting-posts {
   display: flex;

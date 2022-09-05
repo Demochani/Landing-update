@@ -8,7 +8,7 @@ const PostItem = (props) => {
         <img src="https://www.seekpng.com/png/detail/55-556729_wutang-logo-licences-products-wu-tang-clan-logo.png" />
       </div>
       <div className="interesting-post-content">
-        <div style={{color:'#C0C0C0', marginBottom:'10px'}}>Feb 23   8 min read</div>
+        <div className="data">Feb 23   8 min read</div>
         <div className="interesting-post-title">
         {props.post.title}
         </div>

@@ -15,7 +15,6 @@ function App() {
   const [filter, setFilter] = useSearchParams();
   const postQuery = filter.get("post") || "";
   const searchedPosts = usePosts(posts, postQuery);
-
   const [totalCount, setTotalCount] = useState();
   const [totalPages, setTotalPages] = useState(0);
   const [limit, setLimit] = useState(9);
@@ -62,11 +61,14 @@ function App() {
       </div>
       <PostInteresting posts={searchedPosts} postQuery={postQuery} />
       <div ref={lastElement} style={{ height: 20, background: "none" }}></div>
-      {isPostLoading && (
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <Loader />
-        </div>
-      )}
+      {isPostLoading &&
+        (!posts.length ? (
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <Loader />
+          </div>
+        ) : (
+          posts.length
+        ))}
     </div>
   );
 }
