@@ -5,7 +5,7 @@ const PostItem = (props) => {
   return (
     <div className="interesting-post">
       <div className="interesting-post-img">
-        <img src={props.post.url} />
+        <img src="https://www.seekpng.com/png/detail/55-556729_wutang-logo-licences-products-wu-tang-clan-logo.png" />
       </div>
       <div className="interesting-post-content">
         <div style={{color:'#C0C0C0', marginBottom:'10px'}}>Feb 23   8 min read</div>

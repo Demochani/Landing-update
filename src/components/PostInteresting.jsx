@@ -2,7 +2,7 @@ import React from "react";
 import PostItem from "./PostItem";
 import "./styles/App.css";
 
-const PostInteresting = ({ posts, postQuery }) => {
+const PostInteresting = ({ posts }) => {
   if (!posts.length) {
     return (
       <p style={{ margin: "20px", fontSize: "30px" }}>
@@ -18,9 +18,7 @@ const PostInteresting = ({ posts, postQuery }) => {
         INTERESTING
       </strong>
       <div className="interesting-posts">
-        {posts.filter(
-          post => post.title.toLowerCase().includes(postQuery)//
-        ).map((post, index) => (
+        {posts.map((post, index) => (
           <PostItem number={index + 1} post={post} key={post.id} />
         ))}
       </div>
