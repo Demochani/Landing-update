@@ -1,7 +1,6 @@
 import React from "react";
 import PostItem from "./PostItem";
 import "./styles/App.css";
-import CycleItem from "./CycleItem";
 
 const PostInteresting = ({ posts, postQuery }) => {
   if (!posts.length) {

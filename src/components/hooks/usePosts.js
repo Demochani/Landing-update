@@ -1,15 +1,15 @@
 
 import React, { useMemo } from "react";
 
-export const usePosts = (posts, filter ) => {
+export const usePosts = (posts, postQuery ) => {
   const searchedPosts = useMemo(() => {
     return [...posts].filter((post) => {
   
       // if (!filter.get("post")) return true;
       
-      return post.title.toLowerCase().includes(filter);
+      return post.title.toLowerCase().includes(postQuery);
     })
-  }, [posts, filter]);
+  }, [posts, postQuery]);
   return searchedPosts;
 };
 

@@ -1,20 +1,19 @@
 import React, { useState, useRef, useMemo, useEffect } from "react";
-import "../styles/App.css";
-import PostInteresting from "../PostInteresting";
-import PostFilter from "../PostFilter";
-import { usePosts } from "../hooks/usePosts";
-import PostService from "../API/PostService";
-import Loader from "../UI/Loader/Loader";
-import { useFetching } from "../hooks/useFetching";
-import { getPageCount, getPagesArray } from "../utils/pages";
-import CurrentTemp from "../CurrentTemp";
+import "./styles/App.css";
+import PostInteresting from "./PostInteresting";
+import PostFilter from "./PostFilter";
+import PostService from "./API/PostService";
+import Loader from "./UI/Loader/Loader";
+import { useFetching } from "./hooks/useFetching";
+import { getPageCount, getPagesArray } from "./utils/pages";
+import CurrentTemp from "./CurrentTemp";
 import { useSearchParams } from "react-router-dom";
 
 function App() {
   const [posts, setPosts] = useState([]);
   // const [filter, setFilter] = useState("");
   const [filter, setFilter] = useSearchParams();
-  // const searchedPosts = usePosts(posts, filter);
+  //const searchedPosts = usePosts(posts, postQuery);
   const postQuery = filter.get("post") || "";
   const [totalCount, setTotalCount] = useState(); ///////////////////////
   const [totalPages, setTotalPages] = useState(0); //////////////////

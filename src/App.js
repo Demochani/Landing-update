@@ -1,5 +1,5 @@
 import React from "react";
-import AppRoutes from "./components/AppRoutes";
+import Posts from './components/Posts'
 import NavBar from "./components/NavBar";
 import "./components/styles/App.css";
 
@@ -20,7 +20,7 @@ function App() {
         return <h2 key={index}>{element}</h2>;
       })}
     </div> */}
-      <AppRoutes/>
+      <Posts/>
     </div>
   );
 }
